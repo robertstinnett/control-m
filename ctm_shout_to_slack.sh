@@ -15,7 +15,8 @@ hookurl=https://hooks.slack.com/services/T024U1DCE/B2P2DTQNT/9OL0p1tsaOAB5ytRhyg
 channel=`echo $incoming_msg | cut -d ',' -f 1`
 message=`echo $incoming_msg | cut -d ',' -f 2`
 
-#echo channel=$channel - message=$message >> /var/log/controlm/ctm_shout_slack.log
+# Change the location below to where you want to store your logs at.
+echo channel=$channel - message=$message >> /var/log/controlm/ctm_shout_slack.log
 
 if [[ $message = *@here* ]]
 then
