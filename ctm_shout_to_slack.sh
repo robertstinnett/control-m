@@ -8,7 +8,7 @@
 
 
 incoming_msg=$2
-hookurl=https://hooks.slack.com/services/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
+hookurl=<YOUR WEBHOOK HERE>
 
 
 
