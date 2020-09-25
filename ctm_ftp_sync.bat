@@ -16,7 +16,7 @@ REM **********************************************************
 SET FTP_MASTER=WINBATCHM15P
 SET BACKUP_DIR_MASTER=\\network\unc\goes\here\%COMPUTERNAME%
 SET TIMESTAMP=%date:~-4%%date:~4,2%%date:~7,2%%time:~0,2%%time:~3,2%%time:~6,2%
-SET BACKUP_DIR=%BACKUP_DIR%\%TIMESTAMP%
+SET BACKUP_DIR=%BACKUP_DIR_MASTER%\%TIMESTAMP%
 SET CTM_LOCAL_DIR=C:\Program Files\BMC Software\CONTROL-M Agent\Default\CM\AFT\data
 SET CTM_REMOTE_DIR=\\%FTP_MASTER%\c$\Program Files\BMC Software\CONTROL-M Agent\Default\CM\AFT\data
 
