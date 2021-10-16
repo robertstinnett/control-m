@@ -1,6 +1,6 @@
 #!/bin/bash
 # Integrate Control-M Shouts with Slack
-# Robert Stinnett, rob@dmxrob.net
+# Robert Stinnett, robert@robertstinnett.com
 # Shout Msg comes through in %2 param
 # Format:  channel,message
 
