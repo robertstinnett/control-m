@@ -16,7 +16,7 @@ fi
 ctm_environment=$1
 agent_name=$2
 
-ctm config server:hostgroups::get carfaxtraining > ./hostgroups.json
+ctm config server:hostgroups::get $ctm_environment > ./hostgroups.json
 hostgroups=$(<./hostgroups.json)
 for hostgroup in $(echo "${hostgroups}" | jq -r '.[]'); do
     ctm config server:hostgroup:agents::get $ctm_environment $hostgroup > ./agent_list.json
